@@ -8,4 +8,4 @@ generate: $(patsubst %.xsd,%.go,$(notdir $(INPUT)))
 	@echo "Generated!"
 
 clean:
-	rm $(patsubst %.xsd,%.go,$(notdir $(INPUT)))
+	-rm $(patsubst %.xsd,%.go,$(notdir $(INPUT)))
